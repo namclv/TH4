@@ -150,12 +150,6 @@ void On (void)
     LED_PORT->ODR |= LED_PIN;
 }
 
-
-
-
-
-
-
 //cau hinh sys
 void Sys_Init(void)
 {
@@ -223,12 +217,6 @@ void Delay_us(uint16_t us)
     TIM2->CNT = 0; // Reset counter
     while (TIM2->CNT < us);
 }
-
-
-
-
-
-
 int main(void)
 {
 	Sys_Init();
